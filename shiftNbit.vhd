@@ -15,6 +15,9 @@ entity shiftNbit is
               
 end shiftNbit;
 
+--reset has precedence over load
+--load has precedence over shift
+
 architecture rtl of shiftNbit is
         signal int_valueIn, int_valueOut : std_logic_vector(n-1 downto 0);
         
